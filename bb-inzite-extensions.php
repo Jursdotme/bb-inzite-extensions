@@ -16,7 +16,7 @@ function inz_load_modules() {
     if ( class_exists( 'FLBuilder' ) ) {
         // Include your custom modules here.
         require_once 'inz-simple-slider-module/inz-simple-slider-module.php';
-        require_once 'inz-divider-module/inz-divider-module.php';
+        //require_once 'inz-divider-module/inz-divider-module.php';
     }
 }
 add_action( 'init', 'inz_load_modules' );
@@ -26,7 +26,7 @@ add_action( 'init', 'inz_load_modules' );
 require_once 'inc/extended-row-margins.php';
 require_once 'inc/sticky-columns.php';
 require_once 'inc/column-box-shadows.php';
-
-
+require_once 'inc/gradient-background-row.php';
+require_once 'inc/gradient-overlay-row.php';
 
  ?>
