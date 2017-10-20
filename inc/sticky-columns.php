@@ -27,7 +27,7 @@ function inz_sticky_column_option( $form, $id ) {
 add_filter( 'fl_builder_register_settings_form', 'inz_sticky_column_option', 10, 2 );
 
 function my_builder_render_js( $js, $nodes, $global_settings ) {
-    wp_enqueue_script( 'sticky', INZ_MODULES_URL . '/javascript/sticky-columns.js', array ( 'jquery' ), 1.1, true);
+    wp_enqueue_script( 'sticky', INZ_BB_E_URL . '/javascript/sticky-columns.js', array ( 'jquery' ), 1.1, true);
     $js .= 'console.log( "Hello World!" );';
     $js .= 'var sidebar = new StickySidebar(".fl-col-sticky", { topSpacing: 20, bottomSpacing: 20, innerWrapperSelector: ".fl-col-content", resizeSensor: true, minWidth: '.$global_settings->responsive_breakpoint.' });';
     return $js;

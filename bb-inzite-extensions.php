@@ -7,8 +7,8 @@
  * Author: Rasmus Jürs
  * Author URI: http://www.jurs.me
  */
-define( 'INZ_MODULES_DIR', plugin_dir_path( __FILE__ ) );
-define( 'INZ_MODULES_URL', plugins_url( '/', __FILE__ ) );
+define( 'INZ_BB_E_DIR', plugin_dir_path( __FILE__ ) );
+define( 'INZ_BB_E_URL', plugins_url( '/', __FILE__ ) );
 
 // Load custom modules
 function inz_load_modules() {
@@ -18,7 +18,7 @@ function inz_load_modules() {
         //require_once 'inz-divider-module/inz-divider-module.php';
     }
 }
-add_action( 'init', 'inz_load_modules' );
+// add_action( 'init', 'inz_load_modules' );
 
 // Load custom functions
 require_once 'inc/extended-row-margins.php';
@@ -26,5 +26,8 @@ require_once 'inc/sticky-columns.php';
 require_once 'inc/column-box-shadows.php';
 require_once 'inc/gradient-background-row.php';
 require_once 'inc/gradient-overlay-row.php';
+require_once 'inc/gradient-background-column.php';
+require_once 'inc/gradient-overlay-column.php';
+
 
  ?>

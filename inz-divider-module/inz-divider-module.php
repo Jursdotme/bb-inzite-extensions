@@ -7,8 +7,8 @@ class InziteDividerModuleClass extends FLBuilderModule {
             'name'            => __( 'Divider', 'fl-builder' ),
             'description'     => __( 'Divide your sections with interesting shapes.', 'fl-builder' ),
             'category'        => __( 'Inzite', 'fl-builder' ),
-            'dir'             => INZ_MODULES_DIR . 'inz-divider-module/',
-            'url'             => INZ_MODULES_URL . 'inz-divider-module/',
+            'dir'             => INZ_BB_E_DIR . 'inz-divider-module/',
+            'url'             => INZ_BB_E_URL . 'inz-divider-module/',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
             'partial_refresh' => false, // Defaults to false and can be omitted.
