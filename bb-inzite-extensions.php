@@ -10,7 +10,6 @@
 define( 'INZ_MODULES_DIR', plugin_dir_path( __FILE__ ) );
 define( 'INZ_MODULES_URL', plugins_url( '/', __FILE__ ) );
 
-
 // Load custom modules
 function inz_load_modules() {
     if ( class_exists( 'FLBuilder' ) ) {
@@ -20,7 +19,6 @@ function inz_load_modules() {
     }
 }
 add_action( 'init', 'inz_load_modules' );
-
 
 // Load custom functions
 require_once 'inc/extended-row-margins.php';
