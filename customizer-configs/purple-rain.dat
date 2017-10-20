@@ -1,0 +1,12 @@
+a:4:{s:8:"template";s:8:"bb-theme";s:4:"mods";a:51:{i:0;b:0;s:18:"fl-topbar-bg-color";s:7:"#ffffff";s:20:"fl-topbar-text-color";s:7:"#808080";s:20:"fl-topbar-link-color";s:7:"#428bca";s:21:"fl-topbar-hover-color";s:7:"#428bca";s:18:"fl-header-bg-color";s:7:"#ffffff";s:20:"fl-header-text-color";s:7:"#808080";s:20:"fl-header-link-color";s:7:"#808080";s:21:"fl-header-hover-color";s:7:"#428bca";s:15:"fl-nav-bg-color";s:7:"#ffffff";s:17:"fl-nav-text-color";s:7:"#000000";s:17:"fl-nav-link-color";s:7:"#808080";s:18:"fl-nav-hover-color";s:7:"#428bca";s:26:"fl-footer-widgets-bg-color";s:7:"#ffffff";s:28:"fl-footer-widgets-text-color";s:7:"#808080";s:28:"fl-footer-widgets-link-color";s:7:"#428bca";s:29:"fl-footer-widgets-hover-color";s:7:"#428bca";s:18:"fl-footer-bg-color";s:7:"#ffffff";s:20:"fl-footer-text-color";s:7:"#808080";s:20:"fl-footer-link-color";s:7:"#428bca";s:21:"fl-footer-hover-color";s:7:"#428bca";s:18:"fl-nav-font-family";s:9:"Helvetica";s:18:"fl-nav-font-weight";s:3:"400";s:18:"fl-nav-font-format";s:4:"none";s:16:"fl-nav-font-size";s:2:"14";s:18:"custom_css_post_id";i:57;s:9:"fl-preset";s:7:"default";s:15:"fl-layout-width";s:10:"full-width";s:17:"fl-layout-spacing";s:1:"0";s:21:"fl-layout-shadow-size";s:1:"0";s:16:"fl-body-bg-color";s:7:"#f2f2f2";s:9:"fl-accent";s:7:"#32212b";s:15:"fl-accent-hover";s:7:"#32212b";s:21:"fl-topbar-bg-gradient";s:1:"0";s:16:"fl-header-layout";s:5:"right";s:21:"fl-header-bg-gradient";s:1:"0";s:18:"fl-nav-bg-gradient";s:1:"0";s:22:"fl-heading-font-family";s:10:"Montserrat";s:22:"fl-heading-font-weight";s:3:"500";s:22:"fl-heading-font-format";s:9:"uppercase";s:20:"fl-h1-letter-spacing";s:2:"10";s:20:"fl-h2-letter-spacing";s:1:"5";s:20:"fl-h3-letter-spacing";s:1:"3";s:20:"fl-h4-letter-spacing";s:1:"1";s:20:"fl-h5-letter-spacing";s:1:"1";s:21:"fl-heading-text-color";s:7:"#32212b";s:19:"fl-body-font-family";s:10:"Montserrat";s:19:"fl-body-font-weight";s:3:"300";s:17:"fl-body-font-size";s:2:"15";s:19:"fl-body-line-height";s:3:"1.7";s:18:"fl-body-text-color";s:7:"#847a80";}s:7:"options";a:2:{s:9:"site_icon";s:1:"0";s:23:"nav_menus_created_posts";a:0:{}}s:6:"wp_css";s:211:"/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+::selection {
+  background: #efbed6; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #efbed6; /* Gecko Browsers */
+}";}
