@@ -7,7 +7,7 @@ class InziteSimpleSliderModuleClass extends FLBuilderModule {
             'name'            => __( 'Simpel Slider', 'fl-builder' ),
             'description'     => __( 'A simple slider with barebones styling', 'fl-builder' ),
             'category'        => __( 'Inzite', 'fl-builder' ),
-            'dir'             => INZ_BB_ES_DIR . 'inz-simple-slider-module/',
+            'dir'             => INZ_BB_E_DIR . 'inz-simple-slider-module/',
             'url'             => INZ_BB_E_URL . 'inz-simple-slider-module/',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
