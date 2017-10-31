@@ -3,7 +3,7 @@
  * Plugin Name: Inzite Beaver Builder Extensions
  * Plugin URI: http://www.inzite.dk
  * Description: Custom modules and extensions for the Beaver Builder.
- * Version: 0.0.1
+ * Version: 0.0.2
  * Author: Rasmus Jürs
  * Author URI: http://www.jurs.me
  */
