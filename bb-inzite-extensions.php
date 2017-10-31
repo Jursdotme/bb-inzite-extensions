@@ -13,9 +13,9 @@
  */
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/user-name/repo-name/',
+	'https://github.com/Jursdotme/bb-inzite-extensions/',
 	__FILE__,
-	'unique-plugin-or-theme-slug'
+	'bb-inzite-extensions'
 );
 
 /**
