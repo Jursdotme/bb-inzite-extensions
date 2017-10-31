@@ -1,0 +1,26 @@
+{
+    "name": "Inzite Beaver Builder Extensions",
+    "version": "0.0.1",
+    "download_url": "http://example.com/updates/example-plugin.zip",
+
+    "homepage": "http://inzite.dk/",
+    "requires": "4.5",
+    "tested": "4.8",
+    "last_updated": "2017-10-31 16:17:00",
+    "upgrade_notice": "Here's why you should upgrade...",
+
+    "author": "Rasmus Jürs",
+    "author_homepage": "http://inzite.dk/",
+
+    "sections": {
+        "description": "(Required) Plugin description. Basic HTML can be used in all sections.",
+        "installation": "(Recommended) Installation instructions.",
+        "changelog": "(Recommended) Changelog. <p>This section will be displayed by default when the user clicks 'View version x.y.z details'.</p>",
+        "custom_section": "This is a custom section labeled 'Custom Section'."
+    },
+
+    "banners": {
+        "low": "http://w-shadow.com/files/external-update-example/assets/banner-772x250.png",
+        "high": "http://w-shadow.com/files/external-update-example/assets/banner-1544x500.png"
+    }
+}
