@@ -31,8 +31,8 @@ define( 'INZ_BB_E_URL', plugins_url( '/', __FILE__ ) );
 function inz_load_modules() {
     if ( class_exists( 'FLBuilder' ) ) {
         // Include your custom modules here.
-        require_once 'inz-simple-slider-module/inz-simple-slider-module.php';
-        require_once 'inz-definition-list-module/inz-definition-list-module.php';
+        require_once 'inc/modules/inz-simple-slider-module/inz-simple-slider-module.php';
+        require_once 'inc/modules/inz-description-list-module/inz-description-list-module.php';
         //require_once 'inz-divider-module/inz-divider-module.php';
     }
 }
@@ -41,13 +41,13 @@ add_action( 'init', 'inz_load_modules' );
 /**
  * Load custom functions
  */
-require_once 'inc/extended-row-margins.php';
-require_once 'inc/sticky-columns.php';
-require_once 'inc/column-box-shadows.php';
-require_once 'inc/gradient-background-row.php';
-require_once 'inc/gradient-overlay-row.php';
-require_once 'inc/gradient-background-column.php';
-require_once 'inc/gradient-overlay-column.php';
+require_once 'inc/extensions/extended-row-margins.php';
+require_once 'inc/extensions/sticky-columns.php';
+require_once 'inc/extensions/column-box-shadows.php';
+require_once 'inc/extensions/gradient-background-row.php';
+require_once 'inc/extensions/gradient-overlay-row.php';
+require_once 'inc/extensions/gradient-background-column.php';
+require_once 'inc/extensions/gradient-overlay-column.php';
 
 
  ?>

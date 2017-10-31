@@ -7,8 +7,8 @@ class InziteDescriptionListModuleClass extends FLBuilderModule {
             'name'            => __( 'Description List', 'fl-builder' ),
             'description'     => __( 'A simple slider with barebones styling', 'fl-builder' ),
             'category'        => __( 'Inzite', 'fl-builder' ),
-            'dir'             => INZ_BB_E_DIR . 'inz-description-list-module/',
-            'url'             => INZ_BB_E_URL . 'inz-description-list-module/',
+            'dir'             => INZ_BB_E_DIR . 'inc/modules/inz-description-list-module/',
+            'url'             => INZ_BB_E_URL . 'inc/modules/inz-description-list-module/',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
             'partial_refresh' => false, // Defaults to false and can be omitted.
@@ -64,7 +64,7 @@ FLBuilder::register_module( 'InziteDescriptionListModuleClass', array(
                 'fields'        => array(
                     'item_spacing' => array(
                         'type'          => 'text',
-                        'label'         => __( 'Item width', 'fl-builder' ),
+                        'label'         => __( 'Item vertical spacing', 'fl-builder' ),
                         'default'       => '20px',
                     ),
                     'term_float' => array(
