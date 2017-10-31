@@ -1,14 +1,14 @@
 <?php
-class InziteDefinitionListModuleClass extends FLBuilderModule {
+class InziteDescriptionListModuleClass extends FLBuilderModule {
 
     public function __construct()
     {
         parent::__construct(array(
-            'name'            => __( 'Definition List', 'fl-builder' ),
+            'name'            => __( 'Description List', 'fl-builder' ),
             'description'     => __( 'A simple slider with barebones styling', 'fl-builder' ),
             'category'        => __( 'Inzite', 'fl-builder' ),
-            'dir'             => INZ_BB_E_DIR . 'inz-definition-list-module/',
-            'url'             => INZ_BB_E_URL . 'inz-definition-list-module/',
+            'dir'             => INZ_BB_E_DIR . 'inz-description-list-module/',
+            'url'             => INZ_BB_E_URL . 'inz-description-list-module/',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
             'partial_refresh' => false, // Defaults to false and can be omitted.
@@ -16,7 +16,7 @@ class InziteDefinitionListModuleClass extends FLBuilderModule {
     }
 }
 
-FLBuilder::register_module( 'InziteDefinitionListModuleClass', array(
+FLBuilder::register_module( 'InziteDescriptionListModuleClass', array(
     'items-tab'      => array(
         'title'         => __( 'Items', 'fl-builder' ),
         'sections'      => array(
