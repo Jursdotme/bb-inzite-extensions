@@ -5,7 +5,7 @@ class InziteDescriptionListModuleClass extends FLBuilderModule {
     {
         parent::__construct(array(
             'name'            => __( 'Description List', 'fl-builder' ),
-            'description'     => __( 'A simple slider with barebones styling', 'fl-builder' ),
+            'description'     => __( 'List content in a table like layout.', 'fl-builder' ),
             'category'        => __( 'Inzite', 'fl-builder' ),
             'dir'             => INZ_BB_E_DIR . 'inc/modules/inz-description-list-module/',
             'url'             => INZ_BB_E_URL . 'inc/modules/inz-description-list-module/',
