@@ -1,0 +1,281 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Inzite Beaver Builder Extensions\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-02 09:38+0000\n"
+"PO-Revision-Date: 2017-11-02 09:46+0000\n"
+"Last-Translator: ikom-admin <dev-email@flywheel.local>\n"
+"Language-Team: Danish\n"
+"Language: da-DK\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: inc/extensions/gradient-overlay-row.php:10
+#: inc/extensions/gradient-overlay-column.php:10
+msgid "Overlay type"
+msgstr "Overlejringstype"
+
+#: inc/extensions/gradient-overlay-row.php:13
+#: inc/extensions/gradient-overlay-row.php:34
+#: inc/extensions/gradient-overlay-row.php:41
+#: inc/extensions/gradient-background-column.php:16
+#: inc/extensions/gradient-background-column.php:22
+#: inc/extensions/gradient-background-row.php:16
+#: inc/extensions/gradient-background-row.php:22
+#: inc/extensions/gradient-overlay-column.php:13
+msgid "Color"
+msgstr "Farve"
+
+#: inc/extensions/gradient-overlay-row.php:14
+#: inc/extensions/gradient-overlay-column.php:14
+msgctxt "Speed."
+msgid "Gradient"
+msgstr "Gradient"
+
+#: inc/extensions/gradient-overlay-row.php:47
+#: inc/extensions/gradient-background-column.php:28
+#: inc/extensions/gradient-background-row.php:28
+#: inc/extensions/gradient-overlay-column.php:47
+msgid "Orientation"
+msgstr "Orientering"
+
+#: inc/extensions/gradient-overlay-row.php:49
+#: inc/extensions/gradient-background-column.php:30
+#: inc/extensions/gradient-background-row.php:30
+#: inc/extensions/gradient-overlay-column.php:49
+msgid "degrees"
+msgstr "grader"
+
+#: inc/extensions/sticky-columns.php:11
+msgid "Make column sticky"
+msgstr "Sæt kolonne fast"
+
+#: inc/extensions/sticky-columns.php:12
+msgid ""
+"Setting this to yes will make the column \"stick\" to the screen even when "
+"scrolling."
+msgstr ""
+"Aktivering af denne funktion vil \"klæbe\" kolonnen til toppen af skærmen "
+"når du scroller ned over side."
+
+#: inc/extensions/sticky-columns.php:15
+msgid "No"
+msgstr "Nej"
+
+#: inc/extensions/sticky-columns.php:16
+msgid "Yes"
+msgstr "Ja"
+
+#: inc/extensions/gradient-background-column.php:7
+#: inc/extensions/gradient-background-row.php:7
+msgctxt "Background type."
+msgid "Gradient"
+msgstr "Gradient"
+
+#: inc/extensions/gradient-background-column.php:12
+#: inc/extensions/gradient-background-row.php:12
+msgid "Gradient background"
+msgstr "Gradueret baggrund"
+
+#: inc/extensions/column-box-shadows.php:10
+#: inc/extensions/column-box-shadows.php:15
+msgid "Dropshadow"
+msgstr "Baggrundsskygge"
+
+#: inc/extensions/column-box-shadows.php:16
+#: inc/extensions/column-box-shadows.php:69
+msgid "Setting this to yes will activate box shadows for this column."
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:19
+#: inc/extensions/column-box-shadows.php:72
+msgid "none"
+msgstr "ingen"
+
+#: inc/extensions/column-box-shadows.php:20
+msgid "0dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:21
+#: inc/extensions/column-box-shadows.php:73
+msgid "1dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:22
+#: inc/extensions/column-box-shadows.php:74
+msgid "2dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:23
+#: inc/extensions/column-box-shadows.php:75
+msgid "4dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:24
+#: inc/extensions/column-box-shadows.php:76
+msgid "6dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:25
+#: inc/extensions/column-box-shadows.php:77
+msgid "8dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:26
+#: inc/extensions/column-box-shadows.php:78
+msgid "16dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:27
+msgid "Custom"
+msgstr "Brugerdefineret"
+
+#: inc/extensions/column-box-shadows.php:47
+msgid "Shadow horizontal position"
+msgstr "Horisontal skyggeposition"
+
+#: inc/extensions/column-box-shadows.php:51
+msgid "Shadow vertical position"
+msgstr "Vertikal skyggeposition"
+
+#: inc/extensions/column-box-shadows.php:55
+msgid "Shadow blur"
+msgstr "Skygge slørringsgrad"
+
+#: inc/extensions/column-box-shadows.php:59
+msgid "Shadow spread"
+msgstr "Skygge udvidelsesgrad"
+
+#: inc/extensions/column-box-shadows.php:63
+msgid "Shadow color"
+msgstr "Skygge farve"
+
+#: inc/extensions/column-box-shadows.php:68
+msgid "Dropshadow hover"
+msgstr "Baggrundsskygge ved hover"
+
+#: inc/extensions/extended-row-margins.php:6
+msgid "Extended margins"
+msgstr "Udvidet marginer"
+
+#: inc/extensions/column-border-radius.php:10
+msgid "Border radius"
+msgstr "Hjørneradius"
+
+#: inc/extensions/column-border-radius.php:11
+msgid "Add rounded corners to this column."
+msgstr "Tilføj runde hjørner til denne kolonne."
+
+#: inc/extensions/column-border-radius.php:14
+msgid "Disabled"
+msgstr "Deaktiveret"
+
+#: inc/extensions/column-border-radius.php:15
+msgid "Enabled"
+msgstr "Aktiveret"
+
+#: inc/extensions/column-border-radius.php:31
+msgid "Round Corners"
+msgstr "Runde hjørner"
+
+#: inc/extensions/gradient-overlay-column.php:34
+msgid "Start color"
+msgstr "Startfarve"
+
+#: inc/extensions/gradient-overlay-column.php:41
+msgid "End color"
+msgstr "Slutfarve"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:7
+msgid "Description List"
+msgstr "Beskrivelsesliste"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:8
+msgid "List content in a table like layout."
+msgstr "Oprems indhold i en tabel lignende opsætning."
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:9
+msgid "Inzite"
+msgstr "Inzite"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:21
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:24
+msgid "Items"
+msgstr "Punkter"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:28
+msgid "List item"
+msgstr "Punkt"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:38
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:63
+msgid "Styling"
+msgstr "Stilisering"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:41
+msgid "List style"
+msgstr "Liste stil"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:45
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:81
+msgid "Layout"
+msgstr "Layout"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:48
+msgid "Stacked"
+msgstr "Stablet"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:49
+msgid "Inline"
+msgstr "På linie"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:67
+msgid "Item vertical spacing"
+msgstr "Vertikal punktafstand"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:74
+msgid "Term width"
+msgstr "Term bredde"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:84
+msgid "Left"
+msgstr "Venstre"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:85
+msgid "Right"
+msgstr "Højre"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:99
+msgid "List Items"
+msgstr "Punkter"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:109
+msgid "Term"
+msgstr "Term"
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:114
+msgid "Description"
+msgstr "Beskrivelse"
+
+#. Name of the plugin
+msgid "Inzite Beaver Builder Extensions"
+msgstr "Inzite Beaver Builder Udvidelser"
+
+#. Description of the plugin
+msgid "Custom modules and extensions for the Beaver Builder."
+msgstr "Ekstra udvidelser of moduler til Beaver Builder."
+
+#. URI of the plugin
+msgid "http://www.inzite.dk"
+msgstr "http://www.inzite.dk"
+
+#. Author of the plugin
+msgid "Rasmus Jürs"
+msgstr "Rasmus Jürs"
+
+#. Author URI of the plugin
+msgid "http://www.jurs.me"
+msgstr "http://www.jurs.me"

@@ -1,0 +1,280 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-02 09:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: inc/extensions/gradient-overlay-row.php:10
+#: inc/extensions/gradient-overlay-column.php:10
+msgid "Overlay type"
+msgstr ""
+
+#: inc/extensions/gradient-overlay-row.php:13
+#: inc/extensions/gradient-overlay-row.php:34
+#: inc/extensions/gradient-overlay-row.php:41
+#: inc/extensions/gradient-background-column.php:16
+#: inc/extensions/gradient-background-column.php:22
+#: inc/extensions/gradient-background-row.php:16
+#: inc/extensions/gradient-background-row.php:22
+#: inc/extensions/gradient-overlay-column.php:13
+msgid "Color"
+msgstr ""
+
+#: inc/extensions/gradient-overlay-row.php:14
+#: inc/extensions/gradient-overlay-column.php:14
+msgctxt "Speed."
+msgid "Gradient"
+msgstr ""
+
+#: inc/extensions/gradient-overlay-row.php:47
+#: inc/extensions/gradient-background-column.php:28
+#: inc/extensions/gradient-background-row.php:28
+#: inc/extensions/gradient-overlay-column.php:47
+msgid "Orientation"
+msgstr ""
+
+#: inc/extensions/gradient-overlay-row.php:49
+#: inc/extensions/gradient-background-column.php:30
+#: inc/extensions/gradient-background-row.php:30
+#: inc/extensions/gradient-overlay-column.php:49
+msgid "degrees"
+msgstr ""
+
+#: inc/extensions/sticky-columns.php:11
+msgid "Make column sticky"
+msgstr ""
+
+#: inc/extensions/sticky-columns.php:12
+msgid ""
+"Setting this to yes will make the column \"stick\" to the screen even when "
+"scrolling."
+msgstr ""
+
+#: inc/extensions/sticky-columns.php:15
+msgid "No"
+msgstr ""
+
+#: inc/extensions/sticky-columns.php:16
+msgid "Yes"
+msgstr ""
+
+#: inc/extensions/gradient-background-column.php:7
+#: inc/extensions/gradient-background-row.php:7
+msgctxt "Background type."
+msgid "Gradient"
+msgstr ""
+
+#: inc/extensions/gradient-background-column.php:12
+#: inc/extensions/gradient-background-row.php:12
+msgid "Gradient background"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:10
+#: inc/extensions/column-box-shadows.php:15
+msgid "Dropshadow"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:16
+#: inc/extensions/column-box-shadows.php:69
+msgid "Setting this to yes will activate box shadows for this column."
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:19
+#: inc/extensions/column-box-shadows.php:72
+msgid "none"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:20
+msgid "0dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:21
+#: inc/extensions/column-box-shadows.php:73
+msgid "1dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:22
+#: inc/extensions/column-box-shadows.php:74
+msgid "2dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:23
+#: inc/extensions/column-box-shadows.php:75
+msgid "4dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:24
+#: inc/extensions/column-box-shadows.php:76
+msgid "6dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:25
+#: inc/extensions/column-box-shadows.php:77
+msgid "8dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:26
+#: inc/extensions/column-box-shadows.php:78
+msgid "16dp"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:27
+msgid "Custom"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:47
+msgid "Shadow horizontal position"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:51
+msgid "Shadow vertical position"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:55
+msgid "Shadow blur"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:59
+msgid "Shadow spread"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:63
+msgid "Shadow color"
+msgstr ""
+
+#: inc/extensions/column-box-shadows.php:68
+msgid "Dropshadow hover"
+msgstr ""
+
+#: inc/extensions/extended-row-margins.php:6
+msgid "Extended margins"
+msgstr ""
+
+#: inc/extensions/column-border-radius.php:10
+msgid "Border radius"
+msgstr ""
+
+#: inc/extensions/column-border-radius.php:11
+msgid "Add rounded corners to this column."
+msgstr ""
+
+#: inc/extensions/column-border-radius.php:14
+msgid "Disabled"
+msgstr ""
+
+#: inc/extensions/column-border-radius.php:15
+msgid "Enabled"
+msgstr ""
+
+#: inc/extensions/column-border-radius.php:31
+msgid "Round Corners"
+msgstr ""
+
+#: inc/extensions/gradient-overlay-column.php:34
+msgid "Start color"
+msgstr ""
+
+#: inc/extensions/gradient-overlay-column.php:41
+msgid "End color"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:7
+msgid "Description List"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:8
+msgid "List content in a table like layout."
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:9
+msgid "Inzite"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:21
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:24
+msgid "Items"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:28
+msgid "List item"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:38
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:63
+msgid "Styling"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:41
+msgid "List style"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:45
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:81
+msgid "Layout"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:48
+msgid "Stacked"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:49
+msgid "Inline"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:67
+msgid "Item vertical spacing"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:74
+msgid "Term width"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:84
+msgid "Left"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:85
+msgid "Right"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:99
+msgid "List Items"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:109
+msgid "Term"
+msgstr ""
+
+#: inc/modules/inz-description-list-module/inz-description-list-module.php:114
+msgid "Description"
+msgstr ""
+
+#. Name of the plugin
+msgid "Inzite Beaver Builder Extensions"
+msgstr ""
+
+#. Description of the plugin
+msgid "Custom modules and extensions for the Beaver Builder."
+msgstr ""
+
+#. URI of the plugin
+msgid "http://www.inzite.dk"
+msgstr ""
+
+#. Author of the plugin
+msgid "Rasmus Jürs"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://www.jurs.me"
+msgstr ""
