@@ -7,24 +7,24 @@ function inz_column_shadow_option( $form, $id ) {
 
 
 		$form['tabs']['style']['sections']['boxshadow'] = array(
-			'title'	=> __( 'Dropshadow', 'fl-builder' ),
+			'title'	=> __( 'Dropshadow', 'bb-inz-e' ),
 		);
 
         $form['tabs']['style']['sections']['boxshadow']['fields']['shadow'] = array(
 			'type'    => 'select',
-			'label'   => __( 'Dropshadow', 'fl-builder' ),
-			'help'    => __( 'Setting this to yes will activate box shadows for this column.', 'fl-builder' ),
+			'label'   => __( 'Dropshadow', 'bb-inz-e' ),
+			'help'    => __( 'Setting this to yes will activate box shadows for this column.', 'bb-inz-e' ),
 			'default' => 'none',
 			'options' => array(
-				'no'     => __( 'none', 'fl-builder' ),
-				'0dp'    => __( '0dp', 'fl-builder' ),
-				'1dp'    => __( '1dp', 'fl-builder' ),
-				'2dp'    => __( '2dp', 'fl-builder' ),
-				'4dp'    => __( '4dp', 'fl-builder' ),
-				'6dp'    => __( '6dp', 'fl-builder' ),
-				'8dp'    => __( '8dp', 'fl-builder' ),
-				'16dp'   => __( '16dp', 'fl-builder' ),
-				'custom' => __( 'Custom', 'fl-builder' ),
+				'no'     => __( 'none', 'bb-inz-e' ),
+				'0dp'    => __( '0dp', 'bb-inz-e' ),
+				'1dp'    => __( '1dp', 'bb-inz-e' ),
+				'2dp'    => __( '2dp', 'bb-inz-e' ),
+				'4dp'    => __( '4dp', 'bb-inz-e' ),
+				'6dp'    => __( '6dp', 'bb-inz-e' ),
+				'8dp'    => __( '8dp', 'bb-inz-e' ),
+				'16dp'   => __( '16dp', 'bb-inz-e' ),
+				'custom' => __( 'Custom', 'bb-inz-e' ),
 			),
 			'toggle' => array(
 				'custom' => array(
@@ -44,39 +44,39 @@ function inz_column_shadow_option( $form, $id ) {
 
 		$form['tabs']['style']['sections']['boxshadow']['fields']['hshadow'] = array(
 			'type'  => 'text',
-            'label' => __( 'Shadow horizontal position', 'fl-builder' ),
+            'label' => __( 'Shadow horizontal position', 'bb-inz-e' ),
 		);
 		$form['tabs']['style']['sections']['boxshadow']['fields']['vshadow'] = array(
 			'type'  => 'text',
-            'label' => __( 'Shadow vertical position', 'fl-builder' ),
+            'label' => __( 'Shadow vertical position', 'bb-inz-e' ),
 		);
 		$form['tabs']['style']['sections']['boxshadow']['fields']['blur'] = array(
 			'type'  => 'text',
-            'label' => __( 'Shadow blur', 'fl-builder' ),
+            'label' => __( 'Shadow blur', 'bb-inz-e' ),
 		);
 		$form['tabs']['style']['sections']['boxshadow']['fields']['spread'] = array(
 			'type'  => 'text',
-            'label' => __( 'Shadow spread', 'fl-builder' ),
+            'label' => __( 'Shadow spread', 'bb-inz-e' ),
 		);
 		$form['tabs']['style']['sections']['boxshadow']['fields']['color'] = array(
 			'type'  => 'color',
-            'label' => __( 'Shadow color', 'fl-builder' ),
+            'label' => __( 'Shadow color', 'bb-inz-e' ),
 		);
 
 		$form['tabs']['style']['sections']['boxshadow']['fields']['transition_shadow'] = array(
 			'type'    => 'select',
-			'label'   => __( 'Dropshadow hover', 'fl-builder' ),
-			'help'    => __( 'Setting this to yes will activate box shadows for this column.', 'fl-builder' ),
+			'label'   => __( 'Dropshadow hover', 'bb-inz-e' ),
+			'help'    => __( 'Setting this to yes will activate box shadows for this column.', 'bb-inz-e' ),
 			'default' => 'none',
 			'options' => array(
-				'no'     => __( 'none', 'fl-builder' ),
-				'1dp'    => __( '1dp', 'fl-builder' ),
-				'2dp'    => __( '2dp', 'fl-builder' ),
-				'4dp'    => __( '4dp', 'fl-builder' ),
-				'6dp'    => __( '6dp', 'fl-builder' ),
-				'8dp'    => __( '8dp', 'fl-builder' ),
-				'16dp'   => __( '16dp', 'fl-builder' ),
-				//'custom' => __( 'Custom', 'fl-builder' ),
+				'no'     => __( 'none', 'bb-inz-e' ),
+				'1dp'    => __( '1dp', 'bb-inz-e' ),
+				'2dp'    => __( '2dp', 'bb-inz-e' ),
+				'4dp'    => __( '4dp', 'bb-inz-e' ),
+				'6dp'    => __( '6dp', 'bb-inz-e' ),
+				'8dp'    => __( '8dp', 'bb-inz-e' ),
+				'16dp'   => __( '16dp', 'bb-inz-e' ),
+				//'custom' => __( 'Custom', 'bb-inz-e' ),
 			),
 			// 'toggle' => array(
 			// 	'custom' => array(

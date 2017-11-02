@@ -8,12 +8,12 @@ function inz_sticky_column_option( $form, $id ) {
 
         $form['tabs']['style']['sections']['general']['fields']['sticky'] = array(
 			'type'          => 'select',
-			'label'         => __( 'Make column sticky', 'fl-builder' ),
-			'help'        => __( 'Setting this to yes will make the column "stick" to the screen even when scrolling.', 'fl-builder' ),
+			'label'         => __( 'Make column sticky', 'bb-inz-e' ),
+			'help'        => __( 'Setting this to yes will make the column "stick" to the screen even when scrolling.', 'bb-inz-e' ),
 			'default'       => 'no',
 			'options'       => array(
-				'no'          => __( 'No', 'fl-builder' ),
-				'yes'         => __( 'Yes', 'fl-builder' ),
+				'no'          => __( 'No', 'bb-inz-e' ),
+				'yes'         => __( 'Yes', 'bb-inz-e' ),
 			),
 			'preview'         => array(
 				'type'            => 'none',

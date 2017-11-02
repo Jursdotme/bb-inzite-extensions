@@ -7,12 +7,12 @@ function inz_border_radius_option( $form, $id ) {
 
 		$form['tabs']['style']['sections']['border']['fields']['borderradius_toggle'] = array(
 			'type'    => 'select',
-			'label'   => __( 'Border radius', 'fl-builder' ),
-			'help'    => __( 'Add rounded corners to this column.', 'fl-builder' ),
+			'label'   => __( 'Border radius', 'bb-inz-e' ),
+			'help'    => __( 'Add rounded corners to this column.', 'bb-inz-e' ),
 			'default' => 'disabled',
 			'options' => array(
-				'disabled'     => __( 'Disabled', 'fl-builder' ),
-				'enabled'     => __( 'Enabled', 'fl-builder' ),
+				'disabled'     => __( 'Disabled', 'bb-inz-e' ),
+				'enabled'     => __( 'Enabled', 'bb-inz-e' ),
 			),
 			'toggle' => array(
 				'enabled' => array(
@@ -28,7 +28,7 @@ function inz_border_radius_option( $form, $id ) {
 
 		$form['tabs']['style']['sections']['border']['fields']['round_corners'] = array(
 			'type'              => 'dimension',
-			'label'             => __('Round Corners', 'bb-powerpack'),
+			'label'             => __('Round Corners', 'bb-inz-e'),
 			'description'       => 'px',
 		);
 	}

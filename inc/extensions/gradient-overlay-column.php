@@ -7,11 +7,11 @@ function inz_gradient_overlay_column_option( $form, $id ) {
 
 		$form['tabs']['style']['sections']['bg_overlay']['fields']['overlay_type'] = array(
 			'type'          => 'select',
-			'label'         => __( 'Overlay type', 'fl-builder' ),
+			'label'         => __( 'Overlay type', 'bb-inz-e' ),
 			'default'       => 'color',
 			'options'       => array(
-				'color'             => __( 'Color', 'fl-builder' ),
-				'gradient'             => _x( 'Gradient', 'Speed.', 'fl-builder' ),
+				'color'             => __( 'Color', 'bb-inz-e' ),
+				'gradient'             => _x( 'Gradient', 'Speed.', 'bb-inz-e' ),
 			),
 			'toggle'        => array(
 				'gradient'      => array(
@@ -31,22 +31,22 @@ function inz_gradient_overlay_column_option( $form, $id ) {
 
 		$form['tabs']['style']['sections']['bg_overlay']['fields']['overlay_start_color'] = array(
 			'type'          => 'color',
-			'label'         => __( 'Start color', 'fl-builder' ),
+			'label'         => __( 'Start color', 'bb-inz-e' ),
 			'show_reset'    => true,
 			'connections'	=> array( 'color' ),
 
 		);
 		$form['tabs']['style']['sections']['bg_overlay']['fields']['overlay_end_color'] = array(
 			'type'          => 'color',
-			'label'         => __( 'End color', 'fl-builder' ),
+			'label'         => __( 'End color', 'bb-inz-e' ),
 			'show_reset'    => true,
 			'connections'	=> array( 'color' ),
 		);
 		$form['tabs']['style']['sections']['bg_overlay']['fields']['overlay_deg'] = array(
 			'type'          => 'unit',
-			'label'         => __( 'Orientation', 'fl-builder' ),
+			'label'         => __( 'Orientation', 'bb-inz-e' ),
 			'default' => '45',
-			'description' => __('degrees', 'fl-builder'),
+			'description' => __('degrees', 'bb-inz-e'),
 		);
 	}
 

@@ -4,30 +4,30 @@ function inz_gradient_background_row_option( $form, $id ) {
 
 	if ( 'row' == $id ) {
 		// Modify the $form array for rows as needed.
-		$form['tabs']['style']['sections']['background']['fields']['bg_type']['options']['gradient'] = _x( 'Gradient', 'Background type.', 'fl-builder' );
+		$form['tabs']['style']['sections']['background']['fields']['bg_type']['options']['gradient'] = _x( 'Gradient', 'Background type.', 'bb-inz-e' );
 
 		$form['tabs']['style']['sections']['background']['fields']['bg_type']['toggle']['gradient']['sections'] = array( 'bg_gradient' );
 		
 		$form['tabs']['style']['sections']['bg_gradient'] = array(
-			'title'	=> __( 'Gradient background', 'fl-builder' ),
+			'title'	=> __( 'Gradient background', 'bb-inz-e' ),
 			'fields' => array(
 				'start_color' => array(
 					'type'          => 'color',
-					'label'         => __( 'Color', 'fl-builder' ),
+					'label'         => __( 'Color', 'bb-inz-e' ),
 					'show_reset'    => true,
 					'connections'	=> array( 'color' ),
 				),
 				'end_color' => array(
 					'type'          => 'color',
-					'label'         => __( 'Color', 'fl-builder' ),
+					'label'         => __( 'Color', 'bb-inz-e' ),
 					'show_reset'    => true,
 					'connections'	=> array( 'color' ),
 				),
 				'deg' => array(
 					'type'          => 'unit',
-					'label'         => __( 'Orientation', 'fl-builder' ),
+					'label'         => __( 'Orientation', 'bb-inz-e' ),
 					'default' => '45',
-					'description' => __('degrees', 'fl-builder'),
+					'description' => __('degrees', 'bb-inz-e'),
 				),
 			),
 		);

@@ -10,7 +10,23 @@
  * Tested WP: 4.8.3
  * Requires at least: 4.8.3
  * Tested up to: 4.8.3
+ * Domain Path: /lang
+ * Text Domain: bb-inz-e
  */
+
+ /**
+ * Create relative constants
+ */
+define( 'INZ_BB_E_DIR', plugin_dir_path( __FILE__ ) );
+define( 'INZ_BB_E_URL', plugins_url( '/', __FILE__ ) );
+
+/**
+ * Initialize the language files
+ */
+function bb_inz_e_init_lang() {
+    load_plugin_textdomain('bb-inz-e', false, dirname(plugin_basename(__FILE__)). '/lang/');
+}
+add_action('plugins_loaded', 'bb_inz_e_init_lang');
 
 /**
  * Add update check
@@ -23,20 +39,14 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 );
 
 /**
- * Create relative constants
- */
-define( 'INZ_BB_E_DIR', plugin_dir_path( __FILE__ ) );
-define( 'INZ_BB_E_URL', plugins_url( '/', __FILE__ ) );
-
-
-/**
  * Load custom modules
  */
 function inz_load_modules() {
     if ( class_exists( 'FLBuilder' ) ) {
         // Include your custom modules here.
         // require_once 'inc/modules/inz-simple-slider-module/inz-simple-slider-module.php';
-        //require_once 'inc/modules/inz-description-list-module/inz-description-list-module.php';
+        require_once 'inc/modules/inz-description-list-module/inz-description-list-module.php';
+        require_once 'inc/modules/inz-column-heading-module/inz-column-heading-module.php';
     }
 }
 add_action( 'init', 'inz_load_modules' );
