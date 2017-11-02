@@ -41,7 +41,7 @@ add_filter( 'fl_builder_register_settings_form', 'inz_gradient_background_column
 function inz_gradient_background_column_render_css( $css, $nodes, $global_settings ) {
 	foreach ( $nodes['columns'] as $col ) {
 		if ('gradient' === $col->settings->bg_type) {
-			$css .= '.fl-node-'.$col->node.' > .fl-col-content { background: #'.$col->settings->start_color.'; background: linear-gradient('.$col->settings->deg.'deg, #'.$col->settings->start_color.', #'.$col->settings->end_color.'); }';
+			$css .= '.fl-node-'.$col->node.' > .fl-col-content { background: #'.$col->settings->end_color.'; background: linear-gradient('.$col->settings->deg.'deg, #'.$col->settings->end_color.', #'.$col->settings->start_color.'); }';
 		}
 	}
 

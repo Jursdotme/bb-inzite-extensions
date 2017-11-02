@@ -47,7 +47,7 @@ add_filter('fl_builder_column_attributes', 'inz_add_gradient_background_row', 10
 function inz_gradient_background_row_render_css( $css, $nodes, $global_settings ) {
 	foreach ( $nodes['rows'] as $row ) {
 		if ('gradient' === $row->settings->bg_type) {
-			$css .= '.fl-node-'.$row->node.' > .fl-row-content-wrap { background: #'.$row->settings->start_color.'; background: linear-gradient('.$row->settings->deg.'deg, #'.$row->settings->start_color.', #'.$row->settings->end_color.'); }';
+			$css .= '.fl-node-'.$row->node.' > .fl-row-content-wrap { background: #'.$row->settings->end_color.'; background: linear-gradient('.$row->settings->deg.'deg, #'.$row->settings->end_color.', #'.$row->settings->start_color.'); }';
 		}
 	}
 

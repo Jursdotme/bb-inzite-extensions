@@ -63,8 +63,8 @@ function inz_gradient_overlay_row_render_css( $css, $nodes, $global_settings ) {
 				$css .= '.fl-node-'.$row->node.' > .fl-row-content-wrap:after {'.
 					'background: #'.$row->settings->overlay_color.';'.
 					'background: linear-gradient('.$row->settings->overlay_deg.'deg,'.
-					'rgba('. implode( ',', FLBuilderColor::hex_to_rgb( $row->settings->overlay_start_color ) ). ','. $row->settings->bg_overlay_opacity / 100 .'),'.
-					'rgba('. implode( ',', FLBuilderColor::hex_to_rgb( $row->settings->overlay_end_color ) ). ',' .$row->settings->bg_overlay_opacity / 100 .'));}';
+					'rgba('. implode( ',', FLBuilderColor::hex_to_rgb( $row->settings->overlay_end_color ) ). ','. $row->settings->bg_overlay_opacity / 100 .'),'.
+					'rgba('. implode( ',', FLBuilderColor::hex_to_rgb( $row->settings->overlay_start_color ) ). ',' .$row->settings->bg_overlay_opacity / 100 .'));}';
 			}
 		}
 	}
