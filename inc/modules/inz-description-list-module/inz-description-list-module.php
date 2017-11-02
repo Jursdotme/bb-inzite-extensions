@@ -63,9 +63,18 @@ FLBuilder::register_module( 'InziteDescriptionListModuleClass', array(
                 'title'         => __( 'Styling', 'fl-builder' ),
                 'fields'        => array(
                     'item_spacing' => array(
-                        'type'          => 'text',
+                        'type'          => 'unit',
                         'label'         => __( 'Item vertical spacing', 'fl-builder' ),
-                        'default'       => '20px',
+                        'description' => 'px',
+                        'default'       => '20',
+                        'responsive'  => true,
+                    ),
+                    'term_width' => array(
+                        'type'          => 'unit',
+                        'label'         => __( 'Term width', 'fl-builder' ),
+                        'description' => 'px',
+                        'default'       => '100',
+                        'responsive'  => true,
                     ),
                     'term_float' => array(
                         'type'          => 'select',
@@ -75,11 +84,6 @@ FLBuilder::register_module( 'InziteDescriptionListModuleClass', array(
                             'left'      => __( 'Left', 'fl-builder' ),
                             'right'      => __( 'Right', 'fl-builder' )
                         ),
-                    ),
-                    'term_width' => array(
-                        'type'          => 'text',
-                        'label'         => __( 'Term width', 'fl-builder' ),
-                        'default'       => '100px',
                     ),
                 )
             )

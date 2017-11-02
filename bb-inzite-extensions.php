@@ -3,9 +3,13 @@
  * Plugin Name: Inzite Beaver Builder Extensions
  * Plugin URI: http://www.inzite.dk
  * Description: Custom modules and extensions for the Beaver Builder.
- * Version: 0.0.3
+ * Version: 0.1.0
  * Author: Rasmus Jürs
  * Author URI: http://www.jurs.me
+ * Required WP: 4.8.3
+ * Tested WP: 4.8.3
+ * Requires at least: 4.8.3
+ * Tested up to: 4.8.3
  */
 
 /**
@@ -32,8 +36,7 @@ function inz_load_modules() {
     if ( class_exists( 'FLBuilder' ) ) {
         // Include your custom modules here.
         // require_once 'inc/modules/inz-simple-slider-module/inz-simple-slider-module.php';
-        require_once 'inc/modules/inz-description-list-module/inz-description-list-module.php';
-        //require_once 'inz-divider-module/inz-divider-module.php';
+        //require_once 'inc/modules/inz-description-list-module/inz-description-list-module.php';
     }
 }
 add_action( 'init', 'inz_load_modules' );
@@ -48,6 +51,6 @@ require_once 'inc/extensions/gradient-background-row.php';
 require_once 'inc/extensions/gradient-overlay-row.php';
 require_once 'inc/extensions/gradient-background-column.php';
 require_once 'inc/extensions/gradient-overlay-column.php';
-
+require_once 'inc/extensions/column-border-radius.php';
 
  ?>

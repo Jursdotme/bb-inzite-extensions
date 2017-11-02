@@ -15,7 +15,7 @@
 .inline dt {
   float: left;
   clear: left;
-  width: <?php echo $settings->term_width; ?>;
+  width: <?php echo $settings->term_width; ?>px;
   text-align: <?php echo $settings->term_float; ?>;
   font-weight: bold;
 }
@@ -25,6 +25,6 @@
 }
 
 .inline dd {
-  margin: 0 0 0 calc(<?php echo $settings->term_width; ?> + 1rem);
+  margin: 0 0 0 calc(<?php echo $settings->term_width; ?>px + 1rem);
   padding: 0 0 <?php echo $settings->item_spacing; ?> 0;
 }

@@ -13,37 +13,42 @@ function inz_gradient_overlay_row_option( $form, $id ) {
 				'color'             => __( 'Color', 'fl-builder' ),
 				'gradient'             => _x( 'Gradient', 'Speed.', 'fl-builder' ),
 			),
-			'preview'         => array(
-				'type'            => 'none',
-			),
 			'toggle'        => array(
 				'gradient'      => array(
 					'fields'        => array( 
-						'second_color',
-						'deg',
+						'overlay_start_color',
+						'overlay_end_color',
+						'overlay_deg',
+					),
+				),
+				'color' => array(
+					'fields'        => array( 
+						'bg_overlay_color',
 					),
 				),
 			),
 		);
 		
-		$form['tabs']['style']['sections']['bg_overlay']['fields']['second_overlay_color'] = array(
+		$form['tabs']['style']['sections']['bg_overlay']['fields']['overlay_start_color'] = array(
+				'type'          => 'color',
+				'label'         => __( 'Color', 'fl-builder' ),
+				'show_reset'    => true,
+				'connections'	=> array( 'color' ),
+
+		);
+		$form['tabs']['style']['sections']['bg_overlay']['fields']['overlay_end_color'] = array(
 			'type'          => 'color',
-			'label'         => __( 'Second color', 'fl-builder' ),
+			'label'         => __( 'Color', 'fl-builder' ),
 			'show_reset'    => true,
-			'preview'         => array(
-				'type'            => 'none',
-			),
 			'connections'	=> array( 'color' ),
 		);
-				
 		$form['tabs']['style']['sections']['bg_overlay']['fields']['overlay_deg'] = array(
-			'type'          => 'text',
+			'type'          => 'unit',
 			'label'         => __( 'Orientation', 'fl-builder' ),
-			'default' => '45deg',
-			'preview'         => array(
-				'type'            => 'none',
-			),
+			'default' => '45',
+			'description' => __('degrees', 'fl-builder'),
 		);
+
 	}
 
 	return $form;
@@ -56,10 +61,10 @@ function inz_gradient_overlay_row_render_css( $css, $nodes, $global_settings ) {
 		if ( 'gradient' === $row->settings->overlay_type ) {
 			if	( 'photo' === $row->settings->bg_type || 'video' === $row->settings->bg_type || 'slideshow' === $row->settings->bg_type ) {
 				$css .= '.fl-node-'.$row->node.' > .fl-row-content-wrap:after {'.
-					'background: #'.$row->settings->bg_overlay_color.';'.
-					'background: linear-gradient('.$row->settings->overlay_deg.','.
-					'rgba('. implode( ',', FLBuilderColor::hex_to_rgb( $row->settings->bg_overlay_color ) ). ','. $row->settings->bg_overlay_opacity / 100 .'),'.
-					'rgba('. implode( ',', FLBuilderColor::hex_to_rgb( $row->settings->second_overlay_color ) ). ',' .$row->settings->bg_overlay_opacity / 100 .'));}';
+					'background: #'.$row->settings->overlay_color.';'.
+					'background: linear-gradient('.$row->settings->overlay_deg.'deg,'.
+					'rgba('. implode( ',', FLBuilderColor::hex_to_rgb( $row->settings->overlay_start_color ) ). ','. $row->settings->bg_overlay_opacity / 100 .'),'.
+					'rgba('. implode( ',', FLBuilderColor::hex_to_rgb( $row->settings->overlay_end_color ) ). ',' .$row->settings->bg_overlay_opacity / 100 .'));}';
 			}
 		}
 	}

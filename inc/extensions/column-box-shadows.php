@@ -182,25 +182,25 @@ add_filter('fl_builder_column_attributes', 'inz_add_box_shadow', 10, 3 );
 function inz_box_shadow_render_css( $css, $nodes, $global_settings ) {
 	foreach ( $nodes['columns'] as $col ) {
 		if ('0dp' === $col->settings->shadow) {
-			$css .= '.fl-col-shadow-0dp .fl-col-content { position: relative; z-index: 1; box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);}';
+			$css .= '.fl-col-shadow-0dp .fl-col-content { position: relative; box-shadow: 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);}';
 		}
 		if ('1dp' === $col->settings->shadow) {
-			$css .= '.fl-col-shadow-1dp .fl-col-content { position: relative; z-index: 1; box-shadow: 0 0 2px 0 rgba(0,0,0,0.14), 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);}';
+			$css .= '.fl-col-shadow-1dp .fl-col-content { position: relative; box-shadow: 0 0 2px 0 rgba(0,0,0,0.14), 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);}';
 		}
 		if ('2dp' === $col->settings->shadow) {
-			$css .= '.fl-col-shadow-2dp .fl-col-content { position: relative; z-index: 2; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}';
+			$css .= '.fl-col-shadow-2dp .fl-col-content { position: relative; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}';
 		}
 		if ('4dp' === $col->settings->shadow) {
-			$css .= '.fl-col-shadow-4dp .fl-col-content { position: relative; z-index: 3; box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.20);}';
+			$css .= '.fl-col-shadow-4dp .fl-col-content { position: relative; box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.20);}';
 		}
 		if ('6dp' === $col->settings->shadow) {
-			$css .= '.fl-col-shadow-6dp .fl-col-content { position: relative; z-index: 4; box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.20);}';
+			$css .= '.fl-col-shadow-6dp .fl-col-content { position: relative; box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.20);}';
 		}
 		if ('8dp' === $col->settings->shadow) {
-			$css .= '.fl-col-shadow-8dp .fl-col-content { position: relative; z-index: 5; box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 3px rgba(0,0,0,0.12), 0 4px 5px 0 rgba(0,0,0,0.20);}';
+			$css .= '.fl-col-shadow-8dp .fl-col-content { position: relative; box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 3px rgba(0,0,0,0.12), 0 4px 5px 0 rgba(0,0,0,0.20);}';
 		}
 		if ('16dp' === $col->settings->shadow) {
-			$css .= '.fl-col-shadow-16dp .fl-col-content { position: relative; z-index: 6; box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px 0 rgba(0,0,0,0.20);}';
+			$css .= '.fl-col-shadow-16dp .fl-col-content { position: relative; box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px 0 rgba(0,0,0,0.20);}';
 		}
 		if ('custom' === $col->settings->shadow) {
 			$css .= '.fl-node-'.$col->node.' .fl-col-content {box-shadow: '.$col->settings->hshadow . ' ' . $col->settings->vshadow . ' ' . $col->settings->blur . ' ' . $col->settings->spread . ' #' . $col->settings->color . ';}';
@@ -211,22 +211,22 @@ function inz_box_shadow_render_css( $css, $nodes, $global_settings ) {
 			$css .= '.fl-col-shadow-hover .fl-col-content {transition: box-shadow .3s ease-out;}';
 		}
 		if ('1dp' === $col->settings->transition_shadow) {
-			$css .= '.fl-col-shadow-hover-1dp:hover .fl-col-content { position: relative; z-index: 1; box-shadow: 0 0 2px 0 rgba(0,0,0,0.14), 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);}';
+			$css .= '.fl-col-shadow-hover-1dp:hover .fl-col-content { position: relative; box-shadow: 0 0 2px 0 rgba(0,0,0,0.14), 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);}';
 		}
 		if ('2dp' === $col->settings->transition_shadow) {
-			$css .= '.fl-col-shadow-hover-2dp:hover .fl-col-content { position: relative; z-index: 2; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}';
+			$css .= '.fl-col-shadow-hover-2dp:hover .fl-col-content { position: relative; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20);}';
 		}
 		if ('4dp' === $col->settings->transition_shadow) {
-			$css .= '.fl-col-shadow-hover-4dp:hover .fl-col-content { position: relative; z-index: 3; box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.20);}';
+			$css .= '.fl-col-shadow-hover-4dp:hover .fl-col-content { position: relative; box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.20);}';
 		}
 		if ('6dp' === $col->settings->transition_shadow) {
-			$css .= '.fl-col-shadow-hover-6dp:hover .fl-col-content { position: relative; z-index: 4; box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.20);}';
+			$css .= '.fl-col-shadow-hover-6dp:hover .fl-col-content { position: relative; box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.20);}';
 		}
 		if ('8dp' === $col->settings->transition_shadow) {
-			$css .= '.fl-col-shadow-hover-8dp:hover .fl-col-content { position: relative; z-index: 5; box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 3px rgba(0,0,0,0.12), 0 4px 5px 0 rgba(0,0,0,0.20);}';
+			$css .= '.fl-col-shadow-hover-8dp:hover .fl-col-content { position: relative; box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 3px rgba(0,0,0,0.12), 0 4px 5px 0 rgba(0,0,0,0.20);}';
 		}
 		if ('16dp' === $col->settings->transition_shadow) {
-			$css .= '.fl-col-shadow-hover-16dp:hover .fl-col-content { position: relative; z-index: 6; box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px 0 rgba(0,0,0,0.20);}';
+			$css .= '.fl-col-shadow-hover-16dp:hover .fl-col-content { position: relative; box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px 0 rgba(0,0,0,0.20);}';
 		}
 	}
 
