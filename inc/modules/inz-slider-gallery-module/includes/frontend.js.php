@@ -31,3 +31,7 @@ jQuery(function() {
 jQuery('.fl-node-<?php echo $id ?> .thumbnail-gallery').on('init', function(event, slick, direction){
   jQuery('.fl-node-<?php echo $id ?> .thumbnail-gallery').addClass('loaded').removeClass('loading');
 });
+
+jQuery('.fl-node-<?php echo $id ?> .main-gallery').on('init', function(event, slick, direction){
+  jQuery('.fl-node-<?php echo $id ?> .main-gallery').addClass('loaded').removeClass('loading');
+});
