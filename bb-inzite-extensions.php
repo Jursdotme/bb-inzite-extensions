@@ -17,8 +17,10 @@
  /**
  * Create relative constants
  */
+
 define( 'INZ_BB_E_DIR', plugin_dir_path( __FILE__ ) );
 define( 'INZ_BB_E_URL', plugins_url( '/', __FILE__ ) );
+define( 'INZ_BB_E_VERSION', '0.1.2' );
 
 /**
  * Initialize the language files
@@ -39,6 +41,11 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 );
 
 /**
+ * Register third party scripts and styles
+ */
+require_once 'inc/register-scripts-styles.php';
+
+/**
  * Load custom modules
  */
 function inz_load_modules() {
@@ -48,6 +55,7 @@ function inz_load_modules() {
         require_once 'inc/modules/inz-description-list-module/inz-description-list-module.php';
         require_once 'inc/modules/inz-column-heading-module/inz-column-heading-module.php';
         require_once 'inc/modules/inz-search-module/inz-search-module.php';
+        require_once 'inc/modules/inz-slider-gallery-module/inz-slider-gallery-module.php';
     }
 }
 add_action( 'init', 'inz_load_modules' );
@@ -56,7 +64,7 @@ add_action( 'init', 'inz_load_modules' );
  * Load custom functions
  */
 require_once 'inc/extensions/extended-row-margins.php';
-require_once 'inc/extensions/sticky-columns.php';
+// require_once 'inc/extensions/sticky-columns.php';
 require_once 'inc/extensions/column-box-shadows.php';
 require_once 'inc/extensions/gradient-background-row.php';
 require_once 'inc/extensions/gradient-overlay-row.php';
