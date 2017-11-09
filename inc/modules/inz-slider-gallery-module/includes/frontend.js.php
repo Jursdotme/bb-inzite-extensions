@@ -2,6 +2,7 @@ jQuery(document).ready(function(){
   
   jQuery('.fl-node-<?php echo $id ?> .main-gallery').slick({
     lazyload: 'ondemand',
+    adaptiveHeight: true,
     arrows: <?php echo $settings->show_arrows; ?>,
     dots: <?php echo $settings->navigation === 'dots' ? 'true' : 'false' ; ?>,
     fade: <?php echo $settings->fade_transition; ?>,
