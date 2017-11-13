@@ -6,34 +6,35 @@
  *
  * @class InziteGalleryModule
  */
-class InziteSliderGalleryModule extends FLBuilderModule {
+class InziteSliderGalleryModule extends FLBuilderModule
+{
 
-    /** 
+    /**
      * Constructor function for the module. You must pass the
      * name, description, dir and url in an array to the parent class.
      *
      * @method __construct
-     */  
+     */
     public function __construct()
     {
         parent::__construct(array(
             'name'          => __('Slider gallery', 'fl-builder'),
             'description'   => __('Show images in a sliding gallery.', 'fl-builder'),
-            'category'		=> __('Inzite', 'fl-builder'),
+            'category'      => __('Inzite', 'fl-builder'),
             'dir'           => INZ_BB_E_DIR . 'inc/modules/inz-slider-gallery-module/',
             'url'           => INZ_BB_E_URL . 'inc/modules/inz-slider-gallery-module/',
             'editor_export' => true, // Defaults to true and can be omitted.
             'enabled'       => true, // Defaults to true and can be omitted.
         ));
-
-        $this->add_js( 'slick' );
+        $this->add_js( 'imagesloaded' );
         $this->add_js( 'lazy' );
-        // $this->add_js( 'fancybox-3' );
-
+        
+        $this->add_js( 'slick' );
         $this->add_css( 'slick-core' );
         $this->add_css( 'slick-theme' );
-        // $this->add_css( 'fancybox-3' );
 
+        $this->add_js( 'jquery-magnificpopup' );
+        $this->add_css( 'jquery-magnificpopup' );
     }
 }
 
@@ -48,9 +49,9 @@ FLBuilder::register_module('InziteSliderGalleryModule', array(
                 'title'         => __('Section Title', 'fl-builder'), // Section Title
                 'fields'        => array( // Section Fields
                     'photos'        => array(
-						'type'          => 'multiple-photos',
-						'label'         => __( 'Photos', 'fl-builder' ),
-						'connections'   => array( 'multiple-photos' ),
+                        'type'          => 'multiple-photos',
+                        'label'         => __( 'Photos', 'fl-builder' ),
+                        'connections'   => array( 'multiple-photos' ),
                     ),
                     'photo_size' => array(
                         'type'          => 'photo-sizes',
@@ -66,15 +67,29 @@ FLBuilder::register_module('InziteSliderGalleryModule', array(
                             'true'      => __( 'Fade', 'fl-builder' )
                         )
                     ),
-                    // 'use_lightbox' => array(
-                    //     'type'          => 'select',
-                    //     'label'         => __( 'Lightbox', 'fl-builder' ),
-                    //     'default'       => 'false',
-                    //     'options'       => array(
-                    //         'true'      => __( 'Show lightbox', 'fl-builder' ),
-                    //         'false'      => __( 'No lightbox', 'fl-builder' ),
-                    //     ),
-                    // ),
+                    'autoplay' => array(
+                        'type'          => 'select',
+                        'label'         => __( 'Autoplay', 'fl-builder' ),
+                        'default'       => 'false',
+                        'options'       => array(
+                            'true'      => __( 'Enabled', 'fl-builder' ),
+                            'false'      => __( 'Disabled', 'fl-builder' )
+                        ),
+                        'toggle'        => array(
+                            'true'      => array(
+                                'sections'      => array( 'autoplay' ),
+                            )
+                        )
+                    ),
+                    'use_lightbox' => array(
+                        'type'          => 'select',
+                        'label'         => __( 'Lightbox', 'fl-builder' ),
+                        'default'       => 'false',
+                        'options'       => array(
+                            'true'      => __( 'Show lightbox', 'fl-builder' ),
+                            'false'      => __( 'No lightbox', 'fl-builder' ),
+                        ),
+                    ),
                     'show_arrows' => array(
                         'type'          => 'select',
                         'label'         => __( 'Arrows', 'fl-builder' ),
@@ -106,6 +121,32 @@ FLBuilder::register_module('InziteSliderGalleryModule', array(
                     ),
                 )
             ),
+            'autoplay'       => array( // Section
+                'title'         => __('Autoplay', 'fl-builder'), // Section Title
+                'fields'        => array( // Section Fields
+                    'autoplay_interval_speed' => array(
+                        'type'        => 'unit',
+                        'label'       => 'Slide interval',
+                        'description' => 'ms',
+                        'default' => '5000'
+                    ),
+                    'autoplay_transition_speed' => array(
+                        'type'        => 'unit',
+                        'label'       => 'Transition speed',
+                        'description' => 'ms',
+                        'default' => '300'
+                    ),
+                    'pause_on_hover' => array(
+                        'type'          => 'select',
+                        'label'         => __( 'Pause on hover', 'fl-builder' ),
+                        'default'       => 'false',
+                        'options'       => array(
+                            'true'      => __( 'Enabled', 'fl-builder' ),
+                            'false'      => __( 'Disabled', 'fl-builder' )
+                        ),
+                    ),
+                )
+            ),
             'thumbnails'       => array( // Section
                 'title'         => __('Thumbnails', 'fl-builder'), // Section Title
                 'fields'        => array( // Section Fields
@@ -128,6 +169,7 @@ FLBuilder::register_module('InziteSliderGalleryModule', array(
                     ),
                 )
             ),
+           
             'arrows'       => array( // Section
                 'title'         => __('Thumbnails', 'fl-builder'), // Section Title
                 'fields'        => array( // Section Fields
