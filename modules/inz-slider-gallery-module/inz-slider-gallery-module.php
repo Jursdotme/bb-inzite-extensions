@@ -21,8 +21,8 @@ class InziteSliderGalleryModule extends FLBuilderModule
             'name'          => __('Slider gallery', 'fl-builder'),
             'description'   => __('Show images in a sliding gallery.', 'fl-builder'),
             'category'      => __('Inzite', 'fl-builder'),
-            'dir'           => INZ_BB_E_DIR . 'inc/modules/inz-slider-gallery-module/',
-            'url'           => INZ_BB_E_URL . 'inc/modules/inz-slider-gallery-module/',
+            'dir'           => INZ_BB_E_DIR . 'modules/inz-slider-gallery-module/',
+            'url'           => INZ_BB_E_URL . 'modules/inz-slider-gallery-module/',
             'editor_export' => true, // Defaults to true and can be omitted.
             'enabled'       => true, // Defaults to true and can be omitted.
         ));

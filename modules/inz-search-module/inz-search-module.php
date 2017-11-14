@@ -20,8 +20,8 @@ class InziteSearchModule extends FLBuilderModule {
             'name'          => __('Search filed icon', 'fl-builder'),
             'description'   => __('An basic example for coding new modules.', 'fl-builder'),
             'category'		=> __('Inzite', 'fl-builder'),
-            'dir'           => INZ_BB_E_DIR . 'inc/modules/inz-search-module/',
-            'url'           => INZ_BB_E_URL . 'inc/modules/inz-search-module/',
+            'dir'           => INZ_BB_E_DIR . 'modules/inz-search-module/',
+            'url'           => INZ_BB_E_URL . 'modules/inz-search-module/',
             'editor_export' => true, // Defaults to true and can be omitted.
             'enabled'       => true, // Defaults to true and can be omitted.
         ));

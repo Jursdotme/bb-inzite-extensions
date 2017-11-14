@@ -7,8 +7,8 @@ class InziteDescriptionListModuleClass extends FLBuilderModule {
             'name'            => __( 'Description List', 'bb-inz-e' ),
             'description'     => __( 'List content in a table like layout.', 'bb-inz-e' ),
             'category'        => __( 'Inzite', 'bb-inz-e' ),
-            'dir'             => INZ_BB_E_DIR . 'inc/modules/inz-description-list-module/',
-            'url'             => INZ_BB_E_URL . 'inc/modules/inz-description-list-module/',
+            'dir'             => INZ_BB_E_DIR . 'modules/inz-description-list-module/',
+            'url'             => INZ_BB_E_URL . 'modules/inz-description-list-module/',
             'editor_export'   => true, // Defaults to true and can be omitted.
             'enabled'         => true, // Defaults to true and can be omitted.
             'partial_refresh' => false, // Defaults to false and can be omitted.

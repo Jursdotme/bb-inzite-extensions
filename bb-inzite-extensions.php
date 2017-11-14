@@ -46,16 +46,22 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 require_once 'inc/register-scripts-styles.php';
 
 /**
+ * Include custom functions
+ */
+require_once 'inc/inz-nav-walker.php';
+
+/**
  * Load custom modules
  */
 function inz_load_modules() {
     if ( class_exists( 'FLBuilder' ) ) {
         // Include your custom modules here.
         // require_once 'inc/modules/inz-simple-slider-module/inz-simple-slider-module.php';
-        require_once 'inc/modules/inz-description-list-module/inz-description-list-module.php';
-        require_once 'inc/modules/inz-column-heading-module/inz-column-heading-module.php';
-        require_once 'inc/modules/inz-search-module/inz-search-module.php';
-        require_once 'inc/modules/inz-slider-gallery-module/inz-slider-gallery-module.php';
+        require_once 'modules/inz-description-list-module/inz-description-list-module.php';
+        require_once 'modules/inz-column-heading-module/inz-column-heading-module.php';
+        require_once 'modules/inz-search-module/inz-search-module.php';
+        require_once 'modules/inz-slider-gallery-module/inz-slider-gallery-module.php';
+        require_once 'modules/inz-slide-menu-module/inz-slide-menu-module.php';
     }
 }
 add_action( 'init', 'inz_load_modules' );
