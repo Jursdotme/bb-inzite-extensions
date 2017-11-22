@@ -53,18 +53,18 @@
 
 .thumbnail-gallery .slick-list{
     margin: 0 calc(0.5 * -<?php echo $settings->thumbnail_margin; ?>px);
-    
+
 }
 
 .loading {
     opacity: 0;
-    display: none;
+    //display: none;
     transition: opacity .5s ease-out;
     transition-delay: 1s;
 }
 
 .loaded {
-    display: block;
+    //display: block;
     opacity: 1;
     transition-delay: 1s;
     transition: opacity .5s ease-out;

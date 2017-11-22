@@ -55,5 +55,5 @@ jQuery('.fl-node-<?php echo $id ?> .main-gallery').imagesLoaded( function(){
       enabled: true,
       navigateByImgClick: true,
     }
-  }); 
+  });
 <?php endif; ?>
