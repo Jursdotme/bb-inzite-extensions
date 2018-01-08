@@ -18,8 +18,8 @@
     position: absolute;
     top: 50%;
     display: block;
-    min-width: 20px;
-    min-height: 20px;
+    min-width: 35px;
+    min-height: 35px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -29,6 +29,8 @@
     border: none;
     outline: none;
     background: transparent;
+    display: flex !important;
+    justify-content: center;
 }
 
 .inz-slick-prev:hover,

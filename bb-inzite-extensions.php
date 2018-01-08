@@ -3,7 +3,7 @@
  * Plugin Name: Inzite Beaver Builder Extensions
  * Plugin URI: http://www.inzite.dk
  * Description: Custom modules and extensions for the Beaver Builder.
- * Version: 0.1.5
+ * Version: 0.1.4
  * Author: Rasmus Jürs
  * Author URI: http://www.jurs.me
  * Required WP: 4.8.3
@@ -48,7 +48,6 @@ require_once 'inc/register-scripts-styles.php';
 /**
  * Include custom functions
  */
-require_once 'inc/inz-nav-walker.php';
 
 /**
  * Load custom modules
@@ -56,12 +55,10 @@ require_once 'inc/inz-nav-walker.php';
 function inz_load_modules() {
     if ( class_exists( 'FLBuilder' ) ) {
         // Include your custom modules here.
-        // require_once 'inc/modules/inz-simple-slider-module/inz-simple-slider-module.php';
         require_once 'modules/inz-description-list-module/inz-description-list-module.php';
         require_once 'modules/inz-column-heading-module/inz-column-heading-module.php';
         require_once 'modules/inz-search-module/inz-search-module.php';
         require_once 'modules/inz-slider-gallery-module/inz-slider-gallery-module.php';
-        require_once 'modules/inz-slide-menu-module/inz-slide-menu-module.php';
     }
 }
 add_action( 'init', 'inz_load_modules' );
@@ -72,9 +69,9 @@ add_action( 'init', 'inz_load_modules' );
 require_once 'inc/extensions/extended-row-margins.php';
 // require_once 'inc/extensions/sticky-columns.php';
 require_once 'inc/extensions/column-box-shadows.php';
-require_once 'inc/extensions/gradient-background-row.php';
+// require_once 'inc/extensions/gradient-background-row.php';
 require_once 'inc/extensions/gradient-overlay-row.php';
-require_once 'inc/extensions/gradient-background-column.php';
+// require_once 'inc/extensions/gradient-background-column.php';
 require_once 'inc/extensions/gradient-overlay-column.php';
 require_once 'inc/extensions/column-border-radius.php';
 
