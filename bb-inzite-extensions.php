@@ -3,7 +3,7 @@
  * Plugin Name: Inzite Beaver Builder Extensions
  * Plugin URI: http://www.inzite.dk
  * Description: Custom modules and extensions for the Beaver Builder.
- * Version: 0.1.4
+ * Version: 0.1.5
  * Author: Rasmus Jürs
  * Author URI: http://www.jurs.me
  * Required WP: 4.8.3
@@ -20,7 +20,7 @@
 
 define( 'INZ_BB_E_DIR', plugin_dir_path( __FILE__ ) );
 define( 'INZ_BB_E_URL', plugins_url( '/', __FILE__ ) );
-define( 'INZ_BB_E_VERSION', '0.1.4' );
+define( 'INZ_BB_E_VERSION', '0.1.5' );
 
 /**
  * Initialize the language files
@@ -68,10 +68,10 @@ add_action( 'init', 'inz_load_modules' );
  */
 require_once 'inc/extensions/extended-row-margins.php';
 // require_once 'inc/extensions/sticky-columns.php';
-require_once 'inc/extensions/column-box-shadows.php';
-// require_once 'inc/extensions/gradient-background-row.php';
+// require_once 'inc/extensions/column-box-shadows.php'; Obsolete as of UABB 1.6.8
+// require_once 'inc/extensions/gradient-background-row.php'; Obsolete as of UABB 1.6.8
 require_once 'inc/extensions/gradient-overlay-row.php';
-// require_once 'inc/extensions/gradient-background-column.php';
+// require_once 'inc/extensions/gradient-background-column.php'; Obsolete as of UABB 1.6.8
 require_once 'inc/extensions/gradient-overlay-column.php';
 require_once 'inc/extensions/column-border-radius.php';
 
