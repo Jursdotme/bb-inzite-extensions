@@ -1,9 +1,10 @@
 <?php
+
 /**
  * Plugin Name: Inzite Beaver Builder Extensions
  * Plugin URI: http://www.inzite.dk
  * Description: Custom modules and extensions for the Beaver Builder.
- * Version: 0.1.5
+ * Version: 0.1.6
  * Author: Rasmus Jürs
  * Author URI: http://www.jurs.me
  * Required WP: 4.8.3
@@ -14,19 +15,20 @@
  * Text Domain: bb-inz-e
  */
 
- /**
+/**
  * Create relative constants
  */
 
-define( 'INZ_BB_E_DIR', plugin_dir_path( __FILE__ ) );
-define( 'INZ_BB_E_URL', plugins_url( '/', __FILE__ ) );
-define( 'INZ_BB_E_VERSION', '0.1.5' );
+define('INZ_BB_E_DIR', plugin_dir_path(__FILE__));
+define('INZ_BB_E_URL', plugins_url('/', __FILE__));
+define('INZ_BB_E_VERSION', '0.1.6');
 
 /**
  * Initialize the language files
  */
-function bb_inz_e_init_lang() {
-    load_plugin_textdomain('bb-inz-e', false, dirname(plugin_basename(__FILE__)). '/lang/');
+function bb_inz_e_init_lang()
+{
+    load_plugin_textdomain('bb-inz-e', false, dirname(plugin_basename(__FILE__)) . '/lang/');
 }
 add_action('plugins_loaded', 'bb_inz_e_init_lang');
 
@@ -35,9 +37,9 @@ add_action('plugins_loaded', 'bb_inz_e_init_lang');
  */
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/Jursdotme/bb-inzite-extensions/',
-	__FILE__,
-	'bb-inzite-extensions'
+    'https://github.com/Jursdotme/bb-inzite-extensions/',
+    __FILE__,
+    'bb-inzite-extensions'
 );
 
 /**
@@ -52,16 +54,18 @@ require_once 'inc/register-scripts-styles.php';
 /**
  * Load custom modules
  */
-function inz_load_modules() {
-    if ( class_exists( 'FLBuilder' ) ) {
+function inz_load_modules()
+{
+    if (class_exists('FLBuilder')) {
         // Include your custom modules here.
         require_once 'modules/inz-description-list-module/inz-description-list-module.php';
         require_once 'modules/inz-column-heading-module/inz-column-heading-module.php';
         require_once 'modules/inz-search-module/inz-search-module.php';
         require_once 'modules/inz-slider-gallery-module/inz-slider-gallery-module.php';
+        require_once 'modules/inz-feature-module/inz-feature-module.php';
     }
 }
-add_action( 'init', 'inz_load_modules' );
+add_action('init', 'inz_load_modules');
 
 /**
  * Load custom functions
@@ -75,4 +79,4 @@ require_once 'inc/extensions/gradient-overlay-row.php';
 require_once 'inc/extensions/gradient-overlay-column.php';
 require_once 'inc/extensions/column-border-radius.php';
 
- ?>
+?>
