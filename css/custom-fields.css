@@ -1,0 +1,23 @@
+.inz-date-time-field-date,
+.inz-date-time-field-time {
+    display: flex;
+    justify-items: flex-start;
+}
+
+.inz-date-time-field-container {
+    flex: 0 1 auto;
+    margin-right: 16px;
+}
+
+.fl-time-field-year {
+    min-width: 60px;
+}
+
+.inz-date-time-field-date .inz-date-time-field-container label,
+.inz-date-time-field-time .inz-date-time-field-container label {
+    padding: 5px 0 0;
+    font-size: 12px;
+    color: inherit !important;
+    display: block;
+    text-align: center;
+}
